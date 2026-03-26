@@ -1,0 +1,16 @@
+model_provider = "cliproxyapi"
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+disable_response_storage = true
+
+[model_providers.cliproxyapi]
+name = "cliproxyapi"
+base_url = "http://154.26.182.181:8317/v1"
+wire_api = "responses"
+requires_openai_auth = true
+
+[windows]
+sandbox = "elevated"
+
+[features]
+multi_agent = true
